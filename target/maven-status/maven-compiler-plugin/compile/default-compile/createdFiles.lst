@@ -1,0 +1,4 @@
+bdd\App.class
+pojoClasses\DeletePlace.class
+pojoClasses\AddPlace.class
+pojoClasses\Location.class

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="5.302" tests="2" skipped="0" failures="0" errors="0">
+<testcase classname="Validating Place APIs" name="Verify if Place is being Successfully Added using AddPlaceAPI - Example #1.1" time="3.759">
+<system-out><![CDATA[
+Given Add Place Payload with "Aindrila" "Bengali" "Barrackpore".............passed
+When user calls "addPlaceApi" with "Post" http request......................passed
+Then the API call got success with status code 200..........................passed
+And "status" in response body is "OK".......................................passed
+And "scope" in response body is "APP".......................................passed
+And verify placeID created maps to "Aindrila" using "getPlaceApi"...........passed
+]]></system-out>
+</testcase>
+<testcase classname="Validating Place APIs" name="Verify if Delete Place Functionality is working" time="1.392">
+<system-out><![CDATA[
+Given DeletePlace Payload...................................................passed
+When user calls "deletePlaceApi" with "Post" http request...................passed
+Then the API call got success with status code 200..........................passed
+And "status" in response body is "OK".......................................passed
+]]></system-out>
+</testcase>
+</testsuite>
